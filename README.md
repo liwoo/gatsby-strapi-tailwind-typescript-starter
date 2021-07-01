@@ -7,6 +7,9 @@
   Gatsby minimal starter
 </h1>
 
+## TODO
+Edit me!
+
 ## 🚀 Quick start
 
 1.  **Create a Gatsby site.**
