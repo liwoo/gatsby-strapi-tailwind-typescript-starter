@@ -13,7 +13,7 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "prepare": "husky install"
+    "prepare": ".\\.prepare.bat || ./.prepare"
   },
   "dependencies": {
     "babel-plugin-styled-components": "^1.13.1",
