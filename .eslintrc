@@ -7,7 +7,7 @@
   },
   "parser": "babel-eslint",
   "parserOptions": { "ecmaVersion": 8 },
-  "ignorePatterns": ["node_modules/*"],
+  "ignorePatterns": ["node_modules/*", "public/*"],
   "extends": [
     "eslint:recommended",
     "plugin:react/recommended",

@@ -13,7 +13,7 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "prettier": "prettier --write ./src",
+    "prettier": "prettier --write ./src ./tests",
     "prepare": ".\\.prepare.bat || ./.prepare",
     "lint-fix": "eslint --fix . --ext .js,.jsx,.ts,.tsx",
     "cypress:open": "cypress open"
