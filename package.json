@@ -13,9 +13,10 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "prettier": "prettier --write ./src",
+    "prettier": "prettier --write ./src ./tests",
     "prepare": ".\\.prepare.bat || ./.prepare",
-    "lint-fix": "eslint --fix . --ext .js,.jsx,.ts,.tsx"
+    "lint-fix": "eslint --fix . --ext .js,.jsx,.ts,.tsx",
+    "cypress:open": "cypress open"
   },
   "dependencies": {
     "babel-plugin-styled-components": "^1.13.2",
@@ -39,8 +40,10 @@
     "@typescript-eslint/eslint-plugin": "^4.28.1",
     "@typescript-eslint/parser": "^4.28.1",
     "babel-eslint": "^10.1.0",
+    "cypress": "^7.7.0",
     "eslint": "^7.30.0",
     "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-cypress": "^2.11.3",
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-react-hooks": "^4.2.0",
