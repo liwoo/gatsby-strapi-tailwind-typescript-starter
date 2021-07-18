@@ -3,6 +3,7 @@ module.exports = {
     title: 'strapi-typescript-tailwind-starter',
   },
   plugins: [
+    'gatsby-plugin-postcss',
     'gatsby-plugin-styled-components',
     'gatsby-plugin-image',
     'gatsby-plugin-react-helmet',

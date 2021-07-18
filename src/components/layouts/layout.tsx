@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState, createContext } from 'react';
 
-import { WelcomeTitle, MainContainer } from './styled';
+import { WelcomeTitle, Container } from '../views';
 
 export const LayoutContext = createContext({ windowWidth: 0 });
 
@@ -10,10 +10,10 @@ const Layout: React.FC = () => {
 
   return (
     <LayoutContext.Provider value={{ windowWidth }}>
-      <MainContainer>
+      <Container>
         <WelcomeTitle>Styled Component Example</WelcomeTitle>
-      </MainContainer>
+      </Container>
     </LayoutContext.Provider>
   );
 };
-export default Layout;
+export { Layout };
