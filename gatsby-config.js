@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {
   siteMetadata: {
     title: 'strapi-typescript-tailwind-starter',
@@ -23,6 +25,29 @@ module.exports = {
         path: './src/images/',
       },
       __key: 'images',
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'locales',
+        path: path.resolve(__dirname, 'locales'),
+      },
+      __key: 'locales',
+    },
+    {
+      resolve: 'gatsby-plugin-react-i18next',
+      options: {
+        localeJsonSourceName: 'locales',
+        languages: ['en', 'fr', 'de'],
+        defaultLanguage: 'en',
+        siteUrl: 'http://localhost:8000/',
+        i18nextOptions: {
+          keySeparator: false,
+          nsSeparator: false,
+          fallbackLng: 'en',
+        },
+        pages: [],
+      },
     },
   ],
 };
