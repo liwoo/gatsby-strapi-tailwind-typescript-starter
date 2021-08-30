@@ -1,7 +1,7 @@
-import React from 'react';
-import { useState, createContext } from 'react';
+import React, { useState, createContext } from 'react';
 import { Trans, useI18next } from 'gatsby-plugin-react-i18next';
 
+import { SEO } from '../seo';
 import { LangList } from '../languages';
 import { PageTitle, Container } from '../views';
 
@@ -13,6 +13,7 @@ const Layout: React.FC = () => {
 
   return (
     <LayoutContext.Provider value={{ windowWidth }}>
+      <SEO title="Builder"></SEO>
       <Container>
         <PageTitle>
           <Trans>Tailwind Styled Component Example</Trans>
